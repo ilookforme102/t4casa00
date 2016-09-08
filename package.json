@@ -1,0 +1,22 @@
+{
+  "name": "mobile-app",
+  "version": "1.0.0",
+  "description": "My mobile application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ilookforme102/t4casa00.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ilookforme102/t4casa00/issues"
+  },
+  "homepage": "https://github.com/ilookforme102/t4casa00#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
