@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/ilookforme102/t4casa00#readme",
   "dependencies": {
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "body-parser": "^1.15.2"
   }
 }
