@@ -29,7 +29,7 @@ var completedcourses = {
     delete: function(req, res) {
         var id = req.params.id;
         completedcourseData.splice(id, 1);
-        res.json(removed);
+        res.send("removed");
     }
 };
 

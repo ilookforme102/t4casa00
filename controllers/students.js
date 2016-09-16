@@ -22,14 +22,14 @@ var students = {
     update: function(req, res) {
         var updateStudent = req.body;
         var id = req.params.id;
-        studentData[id] = updateStudent
+        studentData[id] = updateStudent;
         res.json(updateStudent);
     },
 
     delete: function(req, res) {
         var id = req.params.id;
-        studentData.splice(id, 1)
-        res.json(removed);
+        studentData.splice(id, 1);
+        res.send("removed");
     }
 };
 

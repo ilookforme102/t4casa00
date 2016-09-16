@@ -38,11 +38,9 @@ app.listen(3000);
 
 var app = require("express")();
 var bodyParser = require("body-parser");
-var bookController = require("./controllers/books");
 var studentController = require("./controllers/students");
 var courseController = require("./controllers/courses");
 var completedcourseController = require("./controllers/completedcourse");
-var data = require("./models/books");
 var studentData = require("./models/students");
 var coursesData = require("./models/courses");
 var completedcoursesData = require("./models/completedcourse");
@@ -52,15 +50,6 @@ app.get('/', function (req, res) {
     responseText += '<small>Welcome to my course. ' +  '</small>';
     res.send(responseText);
 });
-app.route('/books')
-    .get(bookController.getAll)
-    .post(bookController.create);
-
-app.route('/books/:id')
-    .get(bookController.getOne)
-    .put(bookController.update)
-    .delete(bookController.delete);
-
 
 app.route('/students')
     .get(studentController.getAll)
